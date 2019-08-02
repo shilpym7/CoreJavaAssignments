@@ -1,0 +1,42 @@
+//SHILPY MISHRA 
+===========================================================================================================
+package OOPS;
+
+public class account {
+	int accountno;
+	float accountbal;
+	float int_rate;
+
+	public account(int accountno)
+	{
+		this.accountno=accountno;
+	}
+	public account(int accountno,float accountbal,float int_rate)
+	{
+		this.accountno=accountno;
+		this.accountbal=accountbal;
+		this.int_rate=int_rate;
+	}
+	public String get_account_det()
+	{
+		String str="Account number:"+accountno+"\nAccount Balance:"+accountbal+"\nInterest Rate:"+int_rate;
+		return str;
+	}
+	public float calculateInterest(float amt)
+	{
+		return amt*int_rate/100;
+	}
+}
+--------------------------------------------------------------------------------------------------------------------
+package OOPS;
+
+public class sbacc {
+	public static void main(String args[])
+	{   
+		account acc1=new account(3456);
+		System.out.println(acc1.get_account_det());
+		account acc2=new account(3457,400,9);
+		System.out.println(acc2.get_account_det());
+	}
+}
+

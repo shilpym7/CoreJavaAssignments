@@ -1,0 +1,14 @@
+//SHILPY MISHRA 
+WAP to print the no of words in a string
+=======================================================
+package MySumPackage;
+
+public class Count {
+ public static void main(String args[])
+ {
+	 String line="I am learning core java";
+	 String[] arr=line.split(" ");
+	 System.out.print("No of words:"+arr.length);
+	 
+ }
+}

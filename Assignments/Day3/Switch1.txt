@@ -1,0 +1,90 @@
+//SHILPY MISHRA  
+Accept a number from user & print digits in words.
+
+input : 3962
+
+output :
+three
+nine
+six
+two
+=================================================================
+package work;
+
+import java.util.Scanner;
+
+public class DisplayDigits {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int n,r,i=0;
+		n=sc.nextInt();
+		int l=String.valueOf(n).length();
+		String[] str=new String[l];
+		while(n!=0)
+		{
+		r=n%10;
+		n=n/10;
+		switch(r){
+		case 0:
+			//System.out.println("Zero");
+			str[i]="Zero";
+			i++;
+             break;
+		case 1:
+			//System.out.println("One");
+			str[i]="One";
+			i++;
+			break;
+		case 2:
+		//	System.out.println("Two");
+			str[i]="Two";
+			i++;
+			break;
+		case 3:
+		//	System.out.println("Three");
+			str[i]="Three";
+			i++;
+			break;
+		case 4:
+			//System.out.println("Four");
+			str[i]="Four";
+			i++;
+			break;
+		case 5:
+		//	System.out.println("Five");
+			str[i]="Five";
+			i++;
+			break;
+		case 6:
+	//		System.out.println("Six");
+			str[i]="Six";
+			i++;break;
+		case 7:
+			//System.out.println("Seven");
+			str[i]="Seven";
+			i++;
+			break;
+		case 8:
+			//System.out.println("Eight");
+			str[i]="Eight";
+			i++;
+			break;
+		case 9:
+		//	System.out.println("Nine");
+			str[i]="Nine";
+			i++;
+			break;
+	
+		}
+	}
+		String s;
+		//i=l-1;
+		for(int j=l-1;j>=0;j--)
+		{
+			s=str[j];
+			System.out.println(s);
+		}
+
+	}
+}

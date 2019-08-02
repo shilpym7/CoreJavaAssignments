@@ -1,0 +1,20 @@
+//SHILPY MISHRA  
+Java Program to Find the Largest/smallest Among Three Numbers
+==================================================================
+package myFirstPackage;
+
+public class HighestNo {
+	public static void main(String args[])
+	{
+		int a=2,b=5,c=7;
+		if((a>b&&a>c)||(a==b&&b==c)||(a==b)||(a==c))
+			System.out.print(a+" is the highest no.");
+		else if((b>a&&b>c)||(b==c))
+			System.out.print(b+" is the highest no.");
+		else 
+			System.out.print(c+" is the highest no.");
+		
+	}
+	
+	
+}

@@ -1,0 +1,22 @@
+//SHILPY MISHRA
+Print the below Fibonacci series
+Output:
+1 1 2 3 5 8 13 21 44 65
+====================================================
+
+public class fibonacci {
+	public static void main(String args[])
+	{
+		int a=1,b=0,c=0,sum=0;
+		
+		while(c!=10)
+		{
+		
+			System.out.print(a+" ");
+			sum=a+b;
+			b=a;
+			a=sum;
+			c++;
+		}
+	}
+}

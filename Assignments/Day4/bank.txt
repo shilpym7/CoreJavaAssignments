@@ -1,0 +1,42 @@
+//SHILPY MISHRA
+===============================================================================
+package OOPS;
+
+public class bank {
+public float get_roi()
+{
+	return 0f;
+}
+}
+--------------------------------------------------------------------------------
+package OOPS;
+
+public class citi extends bank{
+	public float get_roi()
+	{
+		return 5f;
+	}
+}
+
+---------------------------------------------------------------------------------
+package OOPS;
+
+public class icici extends bank{
+	public float get_roi()
+	{
+		return 9f;
+	}
+}
+----------------------------------------------------------------------------------
+package OOPS;
+
+public class Access {
+	public static void main(String args[])
+	{
+		bank b;
+		b=new icici();
+		System.out.println("Interest rate of icici bank is :"+b.get_roi());
+		b=new citi();
+		System.out.println("Interest rate of citi bank is :"+b.get_roi());
+	}
+}

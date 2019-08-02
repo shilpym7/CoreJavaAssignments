@@ -1,0 +1,46 @@
+//SHILPY MISHRA  
+WAP to compare the list of two students
+=========================================================================
+package myFirstPackage;
+
+public class Student {
+	int marks1,marks2,avg;
+	String name;
+	public int avg()
+	{
+		avg=(this.marks1+this.marks2)/2;
+		return avg;
+	}
+	public static void compare(Student s1,Student s2)
+	{
+		if(s1.avg>s2.avg)
+		{
+		System.out.println("Amit");
+		System.out.println(s1.avg);
+		}
+		else
+		{
+			System.out.println("Shreya");
+			System.out.println(s2.avg);	
+		}
+}
+}
+-------------------------------------------------------------------------
+package myFirstPackage;
+
+public class StudentMain {
+	
+
+	public static void main(String args[])
+	{
+		Student Amit=new Student();
+		Student Shreya=new Student();
+		Amit.marks1=34;
+		Amit.marks2=35;
+		Shreya.marks1=46;
+		Shreya.marks2=45;
+		Amit.avg();
+		Shreya.avg();
+		Student.compare(Amit,Shreya);
+	}
+}

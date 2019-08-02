@@ -1,0 +1,30 @@
+//SHILPY MISHRA  
+WAP to check the marks of the students and print the pass class:
+i) Less than 35 : fail
+ii) More than 35 & less than 50 : Pass
+iii) More than 50 & less than 60 : 2nd Class
+iv) More than 60 & less than 70 : 1st Class
+v) More than 70 : Distinction
+==============================================================
+package myFirstPackage;
+//import java.util.*;
+
+public class Result {
+     public static void main(String args[])
+     {
+    	 float marks=34.99f;
+    	// Scanner sc=new Scanner(System.in);
+    	// marks=sc.nextFloat();
+    	 if(marks>=70)
+    		 System.out.println("FCD");
+    	 else if(marks>=60)
+    		 System.out.println("FC");
+    	 else if(marks>=50)
+    		 System.out.println("SC");
+    	 else if(marks>=35)
+    		 System.out.println("TC");
+    	 else
+    		 System.out.println("F");
+    	 
+     }
+}

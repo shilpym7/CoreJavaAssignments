@@ -1,0 +1,52 @@
+//SHILPY MISHRA
+===================================================================================
+package OOPS;
+
+public class accounts {
+	int accountno;
+	float accountbal;
+	float int_rate;
+	public String get_account_det()
+	{
+		String str="Account number:"+accountno+"\nAccount Balance:"+accountbal+"\nInterest Rate:"+int_rate;
+		return str;
+	}
+	public float calculateInterest(float amt)
+	{
+		return amt*int_rate/100;
+	}
+
+}
+----------------------------------------------------------------------------------------
+package OOPS;
+
+public class sb_account extends accounts {
+	public boolean withdraw(float withdraw_amt)
+	{
+		if(accountbal-withdraw_amt>=500)
+		{
+			accountbal=accountbal-withdraw_amt;
+			return true;
+		}
+		return false;
+	}
+	public void deposit(float depositAmt)
+	{
+		accountbal=accountbal+depositAmt;
+	}
+}
+--------------------------------------------------------------------------------------------
+package OOPS;
+
+public class test_sb_acc {
+	public static void main(String args[])
+	{   
+		sb_account sbacc1=new sb_account();
+		sbacc1.accountno=13579;
+		sbacc1.accountbal=1000;
+		sbacc1.int_rate=10;
+		sbacc1.deposit(1000);
+		System.out.println(sbacc1.get_account_det());
+		sbacc1.withdraw(500);
+	}
+}

@@ -1,0 +1,48 @@
+//SHILPY MISHRA
+Print the below series(prime)
+2 3 12 11 13 36 23 29
+=====================================================
+package work;
+
+public class PrimeSeries {
+public static void main(String args[])
+{
+	int d=0,count=0,no=1,i=1;
+	int[] arr=new int[10];
+	   while(count<10)
+	   {
+		   d=0;
+		   i=1;
+		   while(i<=no)
+		   {
+			   if(no%i==0)
+				d++;
+			   i++;
+		   }
+		   if(d==2)
+		   {
+			   arr[count]=no;
+			   count++;
+		   }
+		   no++;
+		   
+
+}
+	   int c=0;
+	   for(int j=0;j<10;j++)
+	   {
+		   if(c<2)
+		   {
+		   c++;
+		   System.out.print(arr[j]+" ");
+		   }
+		   else
+		   {
+			   System.out.print(arr[j]+arr[j+1]+" ");
+			   j++;
+			   c=0;
+		   }
+		 
+	   }
+}
+}

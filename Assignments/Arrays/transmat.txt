@@ -1,0 +1,44 @@
+//SHILPY MISHRA
+WAP to find transpose of a 3x3 matrix
+================================================================
+package prog;
+
+import java.util.Scanner;
+
+public class trans {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+	int[][] mat=new int[a][b];
+	int[][] trans=new int[b][a];
+	for(int i=0;i<a;i++)
+	{
+		for(int j=0;j<b;j++)
+		{
+			mat[i][j]=sc.nextInt();
+                        
+		}
+	}
+	for(int i=0;i<a;i++)
+	{
+		for(int j=0;j<b;j++)
+		{
+		System.out.print(mat[i][j]+" ");
+                 trans[j][i]=mat[i][j];
+		
+		}
+		System.out.println();
+	}
+	for(int i=0;i<b;i++)
+	{
+		for(int j=0;j<a;j++)
+		{
+		System.out.print(trans[i][j]+" ");
+		}
+		System.out.println();
+	}
+	
+	}
+}

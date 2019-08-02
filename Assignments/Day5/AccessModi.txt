@@ -1,0 +1,69 @@
+//SHILPY MISHRA 
+===========================================================================================
+package Pkg1;
+
+public class ParentClass {
+private int a=10;
+int b=20;
+protected int c=30;
+public int d=40;
+public void display()
+{
+	System.out.println(a);
+}
+}
+----------------------------------------------------------------------------------------------
+package Pkg1;
+
+public class ChildClass1 extends ParentClass {
+	public static void main(String args[])
+	{
+		ParentClass pc=new ParentClass();
+	    pc.display();
+		System.out.println(pc.b);
+		System.out.println(pc.c);
+		System.out.println(pc.d);
+	}
+}
+------------------------------------------------------------------------------------------------
+package Pkg2;
+import Pkg1.ParentClass;
+public class ChildClass2 extends ParentClass{
+	public void details()
+	{
+		//System.out.println(a);
+		//System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+	}
+	public static void main(String args[])
+	{
+		
+		ChildClass2 pc=new ChildClass2();
+	//	pc.details();
+	  //  ParentClass pc=new ParentClass();
+		//System.out.println(pc.a);
+	//	System.out.println(pc.b);
+	System.out.println(pc.c);
+		//System.out.println(pc.d);
+	}
+}
+------------------------------------------------------------------------------------
+
+package Pkg2;
+
+import Pkg1.ParentClass;
+
+public class TestClass {
+	public static void main(String args[])
+	{
+		ParentClass pc=new ParentClass();
+		ChildClass2 cc=new ChildClass2();
+		cc.details();
+		//System.out.println(pc.a);
+		//System.out.println(pc.b);
+	//	System.out.println(pc.c);
+		//System.out.println(pc.d);//
+	}
+}
+

@@ -1,0 +1,18 @@
+//SHILPY MISHRA
+Print the series
+
+99  82  90  74  83  68  78  64
+==============================================
+public class Series2 {
+public static void main(String args[])
+{
+	int k=11,l=10;
+	for(int i=99,j=82;i>=78;i-=k,j-=l)
+	{
+		System.out.print(i+" ");
+		System.out.print(j+" ");
+		k-=2;
+		l-=2;
+	}
+}
+}

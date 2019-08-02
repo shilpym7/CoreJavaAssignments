@@ -1,0 +1,63 @@
+//SHILPY MISHRA  
+Write a program to accept as input, marks in 4 subjects of each of the 3 students. 
+Calculate the average of each student. Print the name & total marks of the student who scored highest average.
+==================================================================================
+package myFirstPackage;
+import java.util.*;
+public class HighScore {
+
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		String n1,n2,n3;
+		System.out.println("Enter name of student 1");
+		n1=sc.next();
+		System.out.println("Enter marks for "+n1);
+		int s1m1=sc.nextInt();
+		int s1m2=sc.nextInt();
+		int s1m3=sc.nextInt();
+		int s1m4=sc.nextInt();
+		System.out.println("Enter name of student 2");
+		n2=sc.next();
+		System.out.println("Enter marks for student "+n2);
+		int s2m1=sc.nextInt();
+		int s2m2=sc.nextInt();
+		int s2m3=sc.nextInt();
+		int s2m4=sc.nextInt();
+		System.out.println("Enter name of student 3");
+		n3=sc.next();
+		System.out.println("Enter marks for student "+n3);
+		int s3m1=sc.nextInt();
+		int s3m2=sc.nextInt();
+		int s3m3=sc.nextInt();
+	    int s3m4=sc.nextInt();
+	    int sum1,sum2,sum3;
+	    float avg1,avg2,avg3;
+	    sum1=s1m1+s1m2+s1m3+s1m4;
+	    sum2=s2m1+s2m2+s2m3+s2m4;
+	    sum3=s3m1+s3m2+s3m3+s3m4;
+		avg1=sum1/3;
+		avg2=sum2/3;
+		avg3=sum3/3;
+		System.out.println("Avg marks of "+n1+" is "+avg1);
+		System.out.println("Avg marks of "+n2+" is "+avg2);
+		System.out.println("Avg marks of "+n3+" is "+avg3);
+		if(avg1>avg2&&avg1>avg3)
+			System.out.println(n1+" scored highest marks\nMarks:"+sum1);
+		else if(avg2>avg1&&avg2>avg3)
+			System.out.println(n2+" scored highest marks\nMarks:"+sum2);
+		else if(avg3>avg1&&avg3>avg2)
+			System.out.println(n3+" scored highest marks\nMarks:"+sum3);
+		else if(avg1==avg2&&avg1!=avg3)
+			System.out.println(n1+" and "+n2+" scored highest marks\nMarks:"+sum1);
+		else if(avg1==avg3&&avg1!=avg2)
+			System.out.println(n1+" and "+n3+" scored highest marks\nMarks:"+sum1);
+		else if(avg3==avg2&&avg1!=avg3)
+			System.out.println(n2+" and "+n3+" scored highest marks\nMarks:"+sum2);
+		else
+				System.out.println("All the students scored equal marks\nMarks:"+sum1);
+		
+			
+		
+	}
+}

@@ -1,0 +1,21 @@
+//SHILPY MISHRA
+Print the sum of all the numbers greater than 35 in below single dimensional array. 
+int[] num = {21, 34, 91, 59, 16, 25, 29, 74, 49, 82};
+Output:
+The sum of numbers =
+=======================================================================================
+package prog;
+
+public class gt35 {
+	public static void main(String args[])
+	{
+		int[] a={21, 34, 91, 59, 16, 25, 29, 74, 49, 82};
+		int sum=0;
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]>35)
+			sum+=a[i];
+		}
+		System.out.print("Sum of all the elements of the array which are greater than 35:"+sum);
+}
+}

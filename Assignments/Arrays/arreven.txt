@@ -1,0 +1,17 @@
+//SHILPY MISHRA
+ From the single dimensional array, print the sum of all the numbers in the even position in array.
+======================================================================================================
+
+public class arreven{
+	public static void main(String args[])
+	{
+		int[] a={36,67,2,57,96,12};
+		int sum=0;
+		for(int i=0;i<a.length;i++)
+		{
+			if(i%2!=0)
+			sum+=a[i];
+		}
+		System.out.print("Sum of all the elements at the even positions in the array:"+sum);
+	}
+}

@@ -1,0 +1,42 @@
+//SHILPY MISHRA  11-JULY-2019
+WAP to print below pattern
+===============================================
+package MySumPackage;
+
+public class hello {
+	public static void main(String args[])
+	{
+		int no=9;
+	for(int j=0;j<=3;j++)
+	{
+	  for(int i=3-j;i>=0;i--)
+	  {
+		  System.out.print(" ");
+	  }
+	  for(int k=0;k<=j;k++)
+		  
+	  {
+		  System.out.print(no+" ");
+	  }
+	  no-=2;
+	  System.out.println();
+	}
+	no+=4;
+	
+	for(int j=0;j<3;j++)
+	{
+	  for(int i=0;i<=j+1;i++)
+	  {
+		  System.out.print(" ");
+	  }
+	  for(int k=3;k>j;k--)
+		  
+	  {
+		  System.out.print(no+" ");
+	  }
+	  no+=2;
+	System.out.println();
+	}
+
+	}
+}

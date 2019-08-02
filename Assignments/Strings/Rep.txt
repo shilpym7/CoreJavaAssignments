@@ -1,0 +1,16 @@
+//SHILPY MISHRA
+How to remove all occurrences of a given character from input String?
+========================================================================================
+
+import java.util.Scanner;
+
+public class Rep {
+public static void main(String args[])
+{
+	Scanner sc=new Scanner(System.in);
+	String s=sc.nextLine();
+	String c=sc.nextLine();
+	String str=s.replaceAll(c,"");
+	System.out.println(str);
+}
+}

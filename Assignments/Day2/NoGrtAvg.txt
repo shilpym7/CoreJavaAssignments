@@ -1,0 +1,25 @@
+//SHILPY MISHRA  
+ Find the sum of all the elements greater than the average of all the elements in the array.
+===================================================================================================
+package myFirstPackage;
+
+public class AvgArr {
+	public static void main(String args[])
+	{
+		int[] marks={94,65,23,56,73};
+		int avg,sum=0;
+		for(int i=0;i<5;i++)
+			sum+=marks[i];
+		avg=sum/5;
+		System.out.println(sum);
+		System.out.println(avg);
+sum=0;
+		for(int i=0;i<5;i++)
+			if(marks[i]>avg)
+                             sum+=marks[i];
+
+	     System.out.println(sum);
+			
+				//System.out.println("No value is greater than the average value");
+	}
+}

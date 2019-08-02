@@ -1,0 +1,35 @@
+//SHILPY MISHRA
+================================================================================
+package OOPS;
+
+public class Acc {
+private int accno;
+private int accbal;
+int age;
+public int getAccno() {
+	return accno;
+}
+public void setAccno(int accno) {
+	this.accno = accno;
+}
+public int getAccbal() {
+	return accbal;
+}
+public void setAccbal(int accbal) {
+	this.accbal = accbal;
+}
+
+}
+-------------------------------------------------------------------------------------
+package OOPS;
+
+public class AccCall {
+	public static void main(String args[])
+	{
+		Acc a=new Acc();
+		a.setAccno(567);
+		a.setAccbal(6000);
+		System.out.println("Account number:"+a.getAccno());
+		System.out.println("Account balance:"+a.getAccbal());
+	}
+}

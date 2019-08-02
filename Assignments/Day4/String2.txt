@@ -1,0 +1,30 @@
+//SHILPY MISHRA
+======================================================================
+package OOPS;
+
+public class stri {
+	/**
+	 * @param args
+	 */
+	public static void main(String args[])
+	{
+		String str="I am learning Java",s="";
+		int l=str.length();
+		int i=0,p=0;
+	    char[] c=str.toCharArray();
+	    while(l!=0)
+	    {
+	    
+	    	if(c[i]==' ')
+	    	{
+	    		System.out.println(str.substring(p, i));
+	    		p=i+1;
+	    	}
+	    	
+	    	i++;
+	    	l--;
+	    }
+	    System.out.println(str.substring(p, str.length()));
+	
+	}
+}

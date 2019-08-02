@@ -1,0 +1,14 @@
+//SHILPY MISHRA  11-JULY-2019
+WAP to display various Relational operations
+=====================================================
+package myFirstPackage;
+
+public class ReLoOp {
+ 
+	public static void main(String args[])
+	{
+		int c=5,a=10,b=20;
+		System.out.println(a<b);
+		System.out.println(b>c);
+	}
+}

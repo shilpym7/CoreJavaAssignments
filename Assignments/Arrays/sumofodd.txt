@@ -1,0 +1,22 @@
+//SHILPY MISHRA
+Print the sum of odd numbers in below single dimensional array. 
+int[] num = {21, 34, 91, 59, 16, 25, 29, 74, 49, 82};
+Output:
+The sum of odd numbers =
+================================================================================
+package prog;
+
+public class sumofodd{
+	public static void main(String args[])
+	{
+
+		int[] a={21, 34, 91, 59, 16, 25, 29, 74, 49, 82};
+		int sum=0;
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]%2!=0)
+			sum+=a[i];
+		}
+		System.out.print("Sum of all the odd elements of the array:"+sum);
+	}
+}

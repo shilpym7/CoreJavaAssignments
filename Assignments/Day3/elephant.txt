@@ -1,0 +1,58 @@
+//SHILPY MISHRA
+===================================================================
+package OOPS;
+
+public class Animal {
+  int age;
+  int weight;
+  String place_of_survival;
+  int no_of_legs;
+  String foodhabit;
+  String gender;
+  String color;
+  String animal_type;//pet/wild;
+  String mOfMove;
+  String surStatus;//Endangered/Extinct/Safe
+  public void eat()
+  {
+	  System.out.println("Animal is eating");
+  }
+  public void sleep()
+  {
+	  System.out.println("Animal is sleeping");
+  }
+}
+-------------------------------------------------------------------------
+package OOPS;
+
+public class Elephant extends Animal{
+	int len_of_trunk;
+	String ele_type;
+	int foodconsumed;
+	public void trumpet()
+	{
+		System.out.println("Elephant trumpets");
+	}
+}
+-------------------------------------------------------------------------
+package OOPS;
+
+public class AnEle {
+	public static void main(String args[])
+	{
+		Elephant ele=new Elephant();
+		ele.age=60;
+		  ele.weight=1000;
+		  ele.place_of_survival="land";
+		  ele.no_of_legs=4;
+		  ele.foodhabit="Herbivores";
+		  ele.gender="Male";
+		  ele.color="Grey";
+		  ele.animal_type="Wild";//pet/wild;
+		  ele.mOfMove="Walking";
+		  ele.surStatus="Endangered";
+		  ele.eat();
+		  ele.sleep();
+		  ele.trumpet();
+	}
+}

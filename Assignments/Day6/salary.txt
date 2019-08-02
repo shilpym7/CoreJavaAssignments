@@ -1,0 +1,78 @@
+//SHILPY MISHRA
+=============================================================================
+abstract public class emp {
+	int eid;
+	String ename;
+	int rateperunit;
+	abstract int calc_monthly_sal();
+	emp(int eid,String ename,int rateperunit)
+	{
+		this.eid=eid;
+		this.ename=ename;
+		this.rateperunit=rateperunit;
+	}
+	public int getEid() {
+		return eid;
+	}
+	public void setEid(int eid) {
+		this.eid = eid;
+	}
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public int getRateperunit() {
+		return rateperunit;
+	}
+	public void setRateperunit(int rateperunit) {
+		this.rateperunit = rateperunit;
+	}
+}
+-------------------------------------------------------------------------------
+
+public class consultant extends emp{
+int totalhrsworked;
+
+int calc_monthly_sal() {
+	// TODO Auto-generated method stub
+	int sal;
+	sal=totalhrsworked*rateperunit;
+	return sal;
+}
+consultant(int thw,int eid,String ename,int rateperunit)
+{
+	super(eid,ename,rateperunit);
+	this.totalhrsworked=thw;
+}
+}
+---------------------------------------------------------------------------------
+
+public class fte extends emp{
+	int totaldaysworked;
+	
+	int calc_monthly_sal() {
+		// TODO Auto-generated method stub
+		int sal;
+		sal=totaldaysworked*rateperunit;
+		
+		return sal;
+	}
+	fte(int tdw,int eid,String ename,int rateperunit)
+	{
+		super(eid,ename,rateperunit);
+		this.totaldaysworked=tdw;
+	}
+}
+-----------------------------------------------------------------------------------
+
+public class Salary {
+	public static void main(String args[])
+	{
+		consultant con=new consultant(125,2,"Riya",250);
+		System.out.println("Salary of consultant :"+con.calc_monthly_sal());
+		fte f=new fte(23,3,"Amit",1000);
+		System.out.println("Salary of Full time employee :"+f.calc_monthly_sal());
+	}
+}
