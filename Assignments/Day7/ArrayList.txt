@@ -1,0 +1,75 @@
+package FRI2;
+
+public class Stu {
+public	int stuid;
+public	String name;
+public int phy;
+public int chem;
+public float avg;
+public float average()
+{
+	avg=(phy+chem)/2f;
+	return avg;
+}
+/*public Stu(int sid,String name,int phy,int chem)
+{
+	this.stuid=sid;
+	this.name=name;
+	this.phy=phy;
+	this.chem=chem;
+}*/
+public Stu(int sid, String name2, int phy2, int chem2) {
+	// TODO Auto-generated constructor stub
+	this.stuid=sid;
+	this.name=name2;
+	this.phy=phy2;
+	this.chem=chem2;
+	
+}
+
+}
+------------------------------------------------------------------------------------
+/*package FRI2;
+
+import java.util.ArrayList;
+
+public class TestStu {
+	public void display(Stu s)
+	{
+		float a=s.average();
+		System.out.println("\nStudent Id:"+s.stuid+"\nStudent Name:"+s.name+"Student's Physics marks:\n"
+		+s.phy+"\nStudent's Chemistry marks"+s.chem+"\nStudent's Avg marks"+a);
+	}
+	public void display(ArrayList<Stu> al)
+	{
+		
+		float a=s.average();
+		System.out.println("\nStudent Id:"+s.stuid+"\nStudent Name:"+s.name+"Student's Physics marks:\n"
+		+s.phy+"\nStudent's Chemistry marks"+s.chem+"\nStudent's Avg marks"+a);
+	}
+public static void main(String args[])
+{
+	ArrayList<Stu> al=new ArrayList<Stu>();
+	Stu Aditya = new Stu(10,"Amit",90,80);
+	Stu Riya = new Stu(203,"Riya",46,50);
+	al.add(Aditya);
+	al.add(Riya);
+	
+	TestStu ts=new TestStu();
+	ts.display(Riya);
+
+	
+	
+	//TestStu ts=new TestStu();
+	
+	
+	Stu Aditya=new Stu(202,"Aditya",37,49);
+	Stu Riya=new Stu(203,"Riya",46,50);
+	al.add(Amit);
+	al.add(Aditya);
+	al.add(Riya);
+	TestStu ts=new TestStu();
+	ts.display(Amit);
+}
+}
+*/
